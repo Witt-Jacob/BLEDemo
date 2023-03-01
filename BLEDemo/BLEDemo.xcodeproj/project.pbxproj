@@ -11,9 +11,6 @@
 		0E4EC8FE29AEEFD5000D7DC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC8FD29AEEFD5000D7DC7 /* ContentView.swift */; };
 		0E4EC90029AEEFD7000D7DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4EC8FF29AEEFD7000D7DC7 /* Assets.xcassets */; };
 		0E4EC90329AEEFD7000D7DC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4EC90229AEEFD7000D7DC7 /* Preview Assets.xcassets */; };
-		0E4EC90D29AEEFD7000D7DC7 /* BLEDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC90C29AEEFD7000D7DC7 /* BLEDemoTests.swift */; };
-		0E4EC91729AEEFD7000D7DC7 /* BLEDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC91629AEEFD7000D7DC7 /* BLEDemoUITests.swift */; };
-		0E4EC91929AEEFD7000D7DC7 /* BLEDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC91829AEEFD7000D7DC7 /* BLEDemoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +37,7 @@
 		0E4EC8FF29AEEFD7000D7DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4EC90229AEEFD7000D7DC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E4EC90829AEEFD7000D7DC7 /* BLEDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E4EC90C29AEEFD7000D7DC7 /* BLEDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDemoTests.swift; sourceTree = "<group>"; };
 		0E4EC91229AEEFD7000D7DC7 /* BLEDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E4EC91629AEEFD7000D7DC7 /* BLEDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDemoUITests.swift; sourceTree = "<group>"; };
-		0E4EC91829AEEFD7000D7DC7 /* BLEDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +107,6 @@
 		0E4EC90B29AEEFD7000D7DC7 /* BLEDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E4EC90C29AEEFD7000D7DC7 /* BLEDemoTests.swift */,
 			);
 			path = BLEDemoTests;
 			sourceTree = "<group>";
@@ -121,8 +114,6 @@
 		0E4EC91529AEEFD7000D7DC7 /* BLEDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0E4EC91629AEEFD7000D7DC7 /* BLEDemoUITests.swift */,
-				0E4EC91829AEEFD7000D7DC7 /* BLEDemoUITestsLaunchTests.swift */,
 			);
 			path = BLEDemoUITests;
 			sourceTree = "<group>";
@@ -266,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E4EC90D29AEEFD7000D7DC7 /* BLEDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E4EC91729AEEFD7000D7DC7 /* BLEDemoUITests.swift in Sources */,
-				0E4EC91929AEEFD7000D7DC7 /* BLEDemoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
