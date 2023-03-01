@@ -21,13 +21,6 @@
 			remoteGlobalIDString = 0E4EC8F729AEEFD5000D7DC7;
 			remoteInfo = BLEDemo;
 		};
-		0E4EC91329AEEFD7000D7DC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0E4EC8F029AEEFD5000D7DC7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0E4EC8F729AEEFD5000D7DC7;
-			remoteInfo = BLEDemo;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +30,6 @@
 		0E4EC8FF29AEEFD7000D7DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4EC90229AEEFD7000D7DC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E4EC90829AEEFD7000D7DC7 /* BLEDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E4EC91229AEEFD7000D7DC7 /* BLEDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +47,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0E4EC90F29AEEFD7000D7DC7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,7 +55,6 @@
 			children = (
 				0E4EC8FA29AEEFD5000D7DC7 /* BLEDemo */,
 				0E4EC90B29AEEFD7000D7DC7 /* BLEDemoTests */,
-				0E4EC91529AEEFD7000D7DC7 /* BLEDemoUITests */,
 				0E4EC8F929AEEFD5000D7DC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,7 +64,6 @@
 			children = (
 				0E4EC8F829AEEFD5000D7DC7 /* BLEDemo.app */,
 				0E4EC90829AEEFD7000D7DC7 /* BLEDemoTests.xctest */,
-				0E4EC91229AEEFD7000D7DC7 /* BLEDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,13 +92,6 @@
 			children = (
 			);
 			path = BLEDemoTests;
-			sourceTree = "<group>";
-		};
-		0E4EC91529AEEFD7000D7DC7 /* BLEDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BLEDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,24 +132,6 @@
 			productReference = 0E4EC90829AEEFD7000D7DC7 /* BLEDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0E4EC91129AEEFD7000D7DC7 /* BLEDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0E4EC92229AEEFD7000D7DC7 /* Build configuration list for PBXNativeTarget "BLEDemoUITests" */;
-			buildPhases = (
-				0E4EC90E29AEEFD7000D7DC7 /* Sources */,
-				0E4EC90F29AEEFD7000D7DC7 /* Frameworks */,
-				0E4EC91029AEEFD7000D7DC7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0E4EC91429AEEFD7000D7DC7 /* PBXTargetDependency */,
-			);
-			name = BLEDemoUITests;
-			productName = BLEDemoUITests;
-			productReference = 0E4EC91229AEEFD7000D7DC7 /* BLEDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,10 +146,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					0E4EC90729AEEFD7000D7DC7 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 0E4EC8F729AEEFD5000D7DC7;
-					};
-					0E4EC91129AEEFD7000D7DC7 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 0E4EC8F729AEEFD5000D7DC7;
 					};
@@ -212,7 +166,6 @@
 			targets = (
 				0E4EC8F729AEEFD5000D7DC7 /* BLEDemo */,
 				0E4EC90729AEEFD7000D7DC7 /* BLEDemoTests */,
-				0E4EC91129AEEFD7000D7DC7 /* BLEDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,13 +181,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0E4EC90629AEEFD7000D7DC7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E4EC91029AEEFD7000D7DC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,13 +206,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0E4EC90E29AEEFD7000D7DC7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -274,11 +213,6 @@
 			isa = PBXTargetDependency;
 			target = 0E4EC8F729AEEFD5000D7DC7 /* BLEDemo */;
 			targetProxy = 0E4EC90929AEEFD7000D7DC7 /* PBXContainerItemProxy */;
-		};
-		0E4EC91429AEEFD7000D7DC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0E4EC8F729AEEFD5000D7DC7 /* BLEDemo */;
-			targetProxy = 0E4EC91329AEEFD7000D7DC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -495,42 +429,6 @@
 			};
 			name = Release;
 		};
-		0E4EC92329AEEFD7000D7DC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7K3TFSLY92;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jake.BLEDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BLEDemo;
-			};
-			name = Debug;
-		};
-		0E4EC92429AEEFD7000D7DC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7K3TFSLY92;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jake.BLEDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BLEDemo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,15 +455,6 @@
 			buildConfigurations = (
 				0E4EC92029AEEFD7000D7DC7 /* Debug */,
 				0E4EC92129AEEFD7000D7DC7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0E4EC92229AEEFD7000D7DC7 /* Build configuration list for PBXNativeTarget "BLEDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0E4EC92329AEEFD7000D7DC7 /* Debug */,
-				0E4EC92429AEEFD7000D7DC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
