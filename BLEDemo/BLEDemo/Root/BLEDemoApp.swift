@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct BLEDemoApp: App {
+    let rootViewModel = RootViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: rootViewModel)
         }
     }
 }

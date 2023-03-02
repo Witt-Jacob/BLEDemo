@@ -11,6 +11,10 @@
 		0E4EC8FE29AEEFD5000D7DC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC8FD29AEEFD5000D7DC7 /* ContentView.swift */; };
 		0E4EC90029AEEFD7000D7DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4EC8FF29AEEFD7000D7DC7 /* Assets.xcassets */; };
 		0E4EC90329AEEFD7000D7DC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4EC90229AEEFD7000D7DC7 /* Preview Assets.xcassets */; };
+		0E4EC92929B0225F000D7DC7 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC92829B0225F000D7DC7 /* RootViewModel.swift */; };
+		0E4EC92F29B023E3000D7DC7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC92E29B023E3000D7DC7 /* HomeView.swift */; };
+		0E4EC93129B026D2000D7DC7 /* SPO2DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93029B026D2000D7DC7 /* SPO2DeviceCard.swift */; };
+		0E4EC93429B02C96000D7DC7 /* BPDeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,10 @@
 		0E4EC8FF29AEEFD7000D7DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4EC90229AEEFD7000D7DC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E4EC90829AEEFD7000D7DC7 /* BLEDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4EC92829B0225F000D7DC7 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		0E4EC92E29B023E3000D7DC7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0E4EC93029B026D2000D7DC7 /* SPO2DeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceCard.swift; sourceTree = "<group>"; };
+		0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPDeviceCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +79,10 @@
 		0E4EC8FA29AEEFD5000D7DC7 /* BLEDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0E4EC8FB29AEEFD5000D7DC7 /* BLEDemoApp.swift */,
-				0E4EC8FD29AEEFD5000D7DC7 /* ContentView.swift */,
+				0E4EC92529B02236000D7DC7 /* Root */,
+				0E4EC92B29B0234E000D7DC7 /* Home */,
+				0E4EC92C29B02359000D7DC7 /* SpO2 */,
+				0E4EC92D29B023C8000D7DC7 /* BP */,
 				0E4EC8FF29AEEFD7000D7DC7 /* Assets.xcassets */,
 				0E4EC90129AEEFD7000D7DC7 /* Preview Content */,
 			);
@@ -92,6 +102,40 @@
 			children = (
 			);
 			path = BLEDemoTests;
+			sourceTree = "<group>";
+		};
+		0E4EC92529B02236000D7DC7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0E4EC8FB29AEEFD5000D7DC7 /* BLEDemoApp.swift */,
+				0E4EC8FD29AEEFD5000D7DC7 /* ContentView.swift */,
+				0E4EC92829B0225F000D7DC7 /* RootViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0E4EC92B29B0234E000D7DC7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0E4EC92E29B023E3000D7DC7 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0E4EC92C29B02359000D7DC7 /* SpO2 */ = {
+			isa = PBXGroup;
+			children = (
+				0E4EC93029B026D2000D7DC7 /* SPO2DeviceCard.swift */,
+			);
+			path = SpO2;
+			sourceTree = "<group>";
+		};
+		0E4EC92D29B023C8000D7DC7 /* BP */ = {
+			isa = PBXGroup;
+			children = (
+				0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */,
+			);
+			path = BP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +240,10 @@
 			files = (
 				0E4EC8FE29AEEFD5000D7DC7 /* ContentView.swift in Sources */,
 				0E4EC8FC29AEEFD5000D7DC7 /* BLEDemoApp.swift in Sources */,
+				0E4EC92929B0225F000D7DC7 /* RootViewModel.swift in Sources */,
+				0E4EC93129B026D2000D7DC7 /* SPO2DeviceCard.swift in Sources */,
+				0E4EC92F29B023E3000D7DC7 /* HomeView.swift in Sources */,
+				0E4EC93429B02C96000D7DC7 /* BPDeviceCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
