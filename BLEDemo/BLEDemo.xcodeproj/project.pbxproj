@@ -13,8 +13,16 @@
 		0E4EC90329AEEFD7000D7DC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4EC90229AEEFD7000D7DC7 /* Preview Assets.xcassets */; };
 		0E4EC92929B0225F000D7DC7 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC92829B0225F000D7DC7 /* RootViewModel.swift */; };
 		0E4EC92F29B023E3000D7DC7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC92E29B023E3000D7DC7 /* HomeView.swift */; };
-		0E4EC93129B026D2000D7DC7 /* SPO2DeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93029B026D2000D7DC7 /* SPO2DeviceCard.swift */; };
+		0E4EC93129B026D2000D7DC7 /* SPO2DeviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93029B026D2000D7DC7 /* SPO2DeviceCardView.swift */; };
 		0E4EC93429B02C96000D7DC7 /* BPDeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */; };
+		0E4EC93629B02EC9000D7DC7 /* SPO2DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93529B02EC9000D7DC7 /* SPO2DeviceViewModel.swift */; };
+		0E4EC93829B02EE6000D7DC7 /* SPO2DeviceViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93729B02EE6000D7DC7 /* SPO2DeviceViewManager.swift */; };
+		0E4EC93C29B066EE000D7DC7 /* SPO2NotConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93B29B066EE000D7DC7 /* SPO2NotConnectedView.swift */; };
+		0E4EC93E29B06702000D7DC7 /* SPO2SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93D29B06702000D7DC7 /* SPO2SearchingView.swift */; };
+		0E4EC94029B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93F29B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift */; };
+		0E4EC94229B06729000D7DC7 /* SPO2ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94129B06729000D7DC7 /* SPO2ConnectingView.swift */; };
+		0E4EC94429B06739000D7DC7 /* SPO2ConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94329B06739000D7DC7 /* SPO2ConnectedView.swift */; };
+		0E4EC94629B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +44,16 @@
 		0E4EC90829AEEFD7000D7DC7 /* BLEDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4EC92829B0225F000D7DC7 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		0E4EC92E29B023E3000D7DC7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		0E4EC93029B026D2000D7DC7 /* SPO2DeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceCard.swift; sourceTree = "<group>"; };
+		0E4EC93029B026D2000D7DC7 /* SPO2DeviceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceCardView.swift; sourceTree = "<group>"; };
 		0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPDeviceCard.swift; sourceTree = "<group>"; };
+		0E4EC93529B02EC9000D7DC7 /* SPO2DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceViewModel.swift; sourceTree = "<group>"; };
+		0E4EC93729B02EE6000D7DC7 /* SPO2DeviceViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceViewManager.swift; sourceTree = "<group>"; };
+		0E4EC93B29B066EE000D7DC7 /* SPO2NotConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2NotConnectedView.swift; sourceTree = "<group>"; };
+		0E4EC93D29B06702000D7DC7 /* SPO2SearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2SearchingView.swift; sourceTree = "<group>"; };
+		0E4EC93F29B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceDiscoveredView.swift; sourceTree = "<group>"; };
+		0E4EC94129B06729000D7DC7 /* SPO2ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2ConnectingView.swift; sourceTree = "<group>"; };
+		0E4EC94329B06739000D7DC7 /* SPO2ConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2ConnectedView.swift; sourceTree = "<group>"; };
+		0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSPO2ConnectionHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +141,9 @@
 		0E4EC92C29B02359000D7DC7 /* SpO2 */ = {
 			isa = PBXGroup;
 			children = (
-				0E4EC93029B026D2000D7DC7 /* SPO2DeviceCard.swift */,
+				0E4EC94729B06949000D7DC7 /* Views */,
+				0E4EC93529B02EC9000D7DC7 /* SPO2DeviceViewModel.swift */,
+				0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */,
 			);
 			path = SpO2;
 			sourceTree = "<group>";
@@ -136,6 +154,20 @@
 				0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */,
 			);
 			path = BP;
+			sourceTree = "<group>";
+		};
+		0E4EC94729B06949000D7DC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E4EC93729B02EE6000D7DC7 /* SPO2DeviceViewManager.swift */,
+				0E4EC93B29B066EE000D7DC7 /* SPO2NotConnectedView.swift */,
+				0E4EC93D29B06702000D7DC7 /* SPO2SearchingView.swift */,
+				0E4EC93F29B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift */,
+				0E4EC94129B06729000D7DC7 /* SPO2ConnectingView.swift */,
+				0E4EC94329B06739000D7DC7 /* SPO2ConnectedView.swift */,
+				0E4EC93029B026D2000D7DC7 /* SPO2DeviceCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,12 +270,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4EC93829B02EE6000D7DC7 /* SPO2DeviceViewManager.swift in Sources */,
 				0E4EC8FE29AEEFD5000D7DC7 /* ContentView.swift in Sources */,
 				0E4EC8FC29AEEFD5000D7DC7 /* BLEDemoApp.swift in Sources */,
 				0E4EC92929B0225F000D7DC7 /* RootViewModel.swift in Sources */,
-				0E4EC93129B026D2000D7DC7 /* SPO2DeviceCard.swift in Sources */,
+				0E4EC94629B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift in Sources */,
+				0E4EC94029B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift in Sources */,
+				0E4EC93C29B066EE000D7DC7 /* SPO2NotConnectedView.swift in Sources */,
+				0E4EC93129B026D2000D7DC7 /* SPO2DeviceCardView.swift in Sources */,
+				0E4EC93629B02EC9000D7DC7 /* SPO2DeviceViewModel.swift in Sources */,
 				0E4EC92F29B023E3000D7DC7 /* HomeView.swift in Sources */,
 				0E4EC93429B02C96000D7DC7 /* BPDeviceCard.swift in Sources */,
+				0E4EC94229B06729000D7DC7 /* SPO2ConnectingView.swift in Sources */,
+				0E4EC93E29B06702000D7DC7 /* SPO2SearchingView.swift in Sources */,
+				0E4EC94429B06739000D7DC7 /* SPO2ConnectedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SPO2DeviceCard: View {
-    @Binding var isConnected: Bool
+struct SPO2DeviceCardView: View {
+    var isConnected: Bool
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -38,8 +38,8 @@ struct SPO2DeviceCard: View {
 struct SPO2DeviceCard_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            SPO2DeviceCard(isConnected: .constant(true))
-            SPO2DeviceCard(isConnected: .constant(false))
+            SPO2DeviceCardView(isConnected: true)
+            SPO2DeviceCardView(isConnected: false)
         }
     }
 }

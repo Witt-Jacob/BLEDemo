@@ -10,10 +10,11 @@ import SwiftUI
 @main
 struct BLEDemoApp: App {
     let rootViewModel = RootViewModel()
+    let spo2ViewModel = SPO2DeviceViewModel()
     
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: rootViewModel)
+            ContentView(viewModel: rootViewModel, spo2ViewModel: spo2ViewModel)
         }
     }
 }

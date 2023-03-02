@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var spo2ViewModel: SPO2DeviceViewModel
+    
     var body: some View {
         VStack {
             Text("My Devices")
@@ -16,15 +18,9 @@ struct HomeView: View {
                 .padding()
             Divider().foregroundColor(.black).padding()
             ScrollView {
-                SPO2DeviceCard(isConnected: .constant(true)).padding()
+                SPO2DeviceCardView(isConnected: spo2ViewModel.state == .connected).padding()
                 BPDeviceCard(isConnected: .constant(true))
             }
         }
-    }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
     }
 }
