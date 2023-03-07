@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct SPO2DeviceDiscoveredView: View {
+    @ObservedObject var viewModel : SPO2DeviceViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Discovered Devices")
+                .font(.title)
+                .foregroundColor(Color.blue)
+                .padding()
+            Divider().foregroundColor(.black).padding()
+            ScrollView {
+                ForEach(viewModel.demoDevices) {
+                    device in
+                    Text("Device \(device.serialNumber)").padding().onTapGesture {
+                        viewModel.connectToDevice(device: device)
+                    }
+                }
+            }
+        }
     }
 }
 
 struct SPO2DeviceDiscoveredView_Previews: PreviewProvider {
     static var previews: some View {
-        SPO2DeviceDiscoveredView()
+        SPO2DeviceDiscoveredView(viewModel: SPO2DeviceViewModel())
     }
 }

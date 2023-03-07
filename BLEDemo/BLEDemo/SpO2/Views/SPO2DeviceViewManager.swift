@@ -12,9 +12,9 @@ struct SPO2DeviceViewManager: View {
     
     var body: some View {
         switch viewModel.state {
-        case .notConnected: SPO2NotConnectedView()
-        case .searching: SPO2SearchingView()
-        case .deviceDiscovered: SPO2DeviceDiscoveredView()
+        case .notConnected: SPO2NotConnectedView(scanForDevices: viewModel.scanForDevices)
+        case .searching: SPO2SearchingView(cancelScan: {})
+        case .deviceDiscovered: SPO2DeviceDiscoveredView(viewModel : viewModel)
         case .connecting: SPO2ConnectingView()
         case .connected: SPO2ConnectedView()
         }

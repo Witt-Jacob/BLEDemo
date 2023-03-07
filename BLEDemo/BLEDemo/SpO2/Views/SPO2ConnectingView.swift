@@ -9,7 +9,22 @@ import SwiftUI
 
 struct SPO2ConnectingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Connecting...")
+                .font(.title)
+                .foregroundColor(Color.blue)
+                .padding()
+            Divider().foregroundColor(.black).padding()
+            Button(action: {
+                
+            }) {
+                Text("CANCEL")
+                    .fontWeight(.bold)
+                    .padding()
+                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.blue, lineWidth: 1))
+            }
+        }
+        Spacer()
     }
 }
 

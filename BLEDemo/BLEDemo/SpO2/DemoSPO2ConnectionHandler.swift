@@ -8,7 +8,16 @@
 import Foundation
 
 class DemoSPO2ConnectionHandler {
-    func scanForDevices() {
-        
+    func scanForDevices(onDeviceDiscovered: @escaping (DemoSPO2Device) -> Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1.0) {
+            let uuid = UUID().uuidString
+            onDeviceDiscovered(DemoSPO2Device(id: uuid, serialNumber: uuid))
+        }
+    }
+    
+    func connectToDevice(device: DemoSPO2Device, onConnected: @escaping (DemoSPO2Device) -> Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1.0) {
+            onConnected(device)
+        }
     }
 }

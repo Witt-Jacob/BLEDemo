@@ -23,6 +23,7 @@
 		0E4EC94229B06729000D7DC7 /* SPO2ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94129B06729000D7DC7 /* SPO2ConnectingView.swift */; };
 		0E4EC94429B06739000D7DC7 /* SPO2ConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94329B06739000D7DC7 /* SPO2ConnectedView.swift */; };
 		0E4EC94629B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */; };
+		0E7663B129B1346C004CE0AB /* DemoSPO2Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7663B029B1346C004CE0AB /* DemoSPO2Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		0E4EC94129B06729000D7DC7 /* SPO2ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2ConnectingView.swift; sourceTree = "<group>"; };
 		0E4EC94329B06739000D7DC7 /* SPO2ConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2ConnectedView.swift; sourceTree = "<group>"; };
 		0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSPO2ConnectionHandler.swift; sourceTree = "<group>"; };
+		0E7663B029B1346C004CE0AB /* DemoSPO2Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSPO2Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				0E4EC94729B06949000D7DC7 /* Views */,
 				0E4EC93529B02EC9000D7DC7 /* SPO2DeviceViewModel.swift */,
 				0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */,
+				0E7663B029B1346C004CE0AB /* DemoSPO2Device.swift */,
 			);
 			path = SpO2;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				0E4EC92929B0225F000D7DC7 /* RootViewModel.swift in Sources */,
 				0E4EC94629B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift in Sources */,
 				0E4EC94029B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift in Sources */,
+				0E7663B129B1346C004CE0AB /* DemoSPO2Device.swift in Sources */,
 				0E4EC93C29B066EE000D7DC7 /* SPO2NotConnectedView.swift in Sources */,
 				0E4EC93129B026D2000D7DC7 /* SPO2DeviceCardView.swift in Sources */,
 				0E4EC93629B02EC9000D7DC7 /* SPO2DeviceViewModel.swift in Sources */,

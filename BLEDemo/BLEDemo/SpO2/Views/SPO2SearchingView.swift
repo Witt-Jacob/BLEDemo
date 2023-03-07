@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct SPO2SearchingView: View {
+    let cancelScan : () -> Void
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Scanning...")
+                .font(.title)
+                .foregroundColor(Color.blue)
+                .padding()
+            Divider().foregroundColor(.black).padding()
+            Button(action: {
+                
+            }) {
+                Text("CANCEL")
+                    .fontWeight(.bold)
+                    .padding()
+                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.blue, lineWidth: 1))
+            }
+        }
+        Spacer()
     }
 }
 
 struct SPO2SearchingView_Previews: PreviewProvider {
     static var previews: some View {
-        SPO2SearchingView()
+        SPO2SearchingView(cancelScan: {})
     }
 }
