@@ -13,17 +13,20 @@
 		0E4EC90329AEEFD7000D7DC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4EC90229AEEFD7000D7DC7 /* Preview Assets.xcassets */; };
 		0E4EC92929B0225F000D7DC7 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC92829B0225F000D7DC7 /* RootViewModel.swift */; };
 		0E4EC92F29B023E3000D7DC7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC92E29B023E3000D7DC7 /* HomeView.swift */; };
-		0E4EC93129B026D2000D7DC7 /* SPO2DeviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93029B026D2000D7DC7 /* SPO2DeviceCardView.swift */; };
-		0E4EC93429B02C96000D7DC7 /* BPDeviceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */; };
-		0E4EC93629B02EC9000D7DC7 /* SPO2DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93529B02EC9000D7DC7 /* SPO2DeviceViewModel.swift */; };
-		0E4EC93829B02EE6000D7DC7 /* SPO2DeviceViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93729B02EE6000D7DC7 /* SPO2DeviceViewManager.swift */; };
-		0E4EC93C29B066EE000D7DC7 /* SPO2NotConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93B29B066EE000D7DC7 /* SPO2NotConnectedView.swift */; };
-		0E4EC93E29B06702000D7DC7 /* SPO2SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93D29B06702000D7DC7 /* SPO2SearchingView.swift */; };
-		0E4EC94029B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93F29B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift */; };
-		0E4EC94229B06729000D7DC7 /* SPO2ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94129B06729000D7DC7 /* SPO2ConnectingView.swift */; };
-		0E4EC94429B06739000D7DC7 /* SPO2ConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94329B06739000D7DC7 /* SPO2ConnectedView.swift */; };
-		0E4EC94629B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */; };
-		0E7663B129B1346C004CE0AB /* DemoSPO2Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7663B029B1346C004CE0AB /* DemoSPO2Device.swift */; };
+		0E4EC93129B026D2000D7DC7 /* DeviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93029B026D2000D7DC7 /* DeviceCardView.swift */; };
+		0E4EC93629B02EC9000D7DC7 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93529B02EC9000D7DC7 /* DeviceViewModel.swift */; };
+		0E4EC93829B02EE6000D7DC7 /* DeviceViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93729B02EE6000D7DC7 /* DeviceViewManager.swift */; };
+		0E4EC93C29B066EE000D7DC7 /* NotConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93B29B066EE000D7DC7 /* NotConnectedView.swift */; };
+		0E4EC93E29B06702000D7DC7 /* SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93D29B06702000D7DC7 /* SearchingView.swift */; };
+		0E4EC94029B06719000D7DC7 /* DeviceDiscoveredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC93F29B06719000D7DC7 /* DeviceDiscoveredView.swift */; };
+		0E4EC94229B06729000D7DC7 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94129B06729000D7DC7 /* ConnectingView.swift */; };
+		0E4EC94429B06739000D7DC7 /* ConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94329B06739000D7DC7 /* ConnectedView.swift */; };
+		0E4EC94629B06941000D7DC7 /* ConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EC94529B06941000D7DC7 /* ConnectionHandler.swift */; };
+		0E7663B129B1346C004CE0AB /* BleDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7663B029B1346C004CE0AB /* BleDevice.swift */; };
+		0E9119CB29B7FB690018182D /* CommunicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9119CA29B7FB690018182D /* CommunicationService.swift */; };
+		0E9119CD29B7FB900018182D /* CommunicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9119CC29B7FB900018182D /* CommunicationDelegate.swift */; };
+		0E9119D029B7FBED0018182D /* BatteryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9119CF29B7FBED0018182D /* BatteryInfo.swift */; };
+		0E9119D429B8065C0018182D /* DisplayMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9119D329B8065C0018182D /* DisplayMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,17 +48,20 @@
 		0E4EC90829AEEFD7000D7DC7 /* BLEDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4EC92829B0225F000D7DC7 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		0E4EC92E29B023E3000D7DC7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		0E4EC93029B026D2000D7DC7 /* SPO2DeviceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceCardView.swift; sourceTree = "<group>"; };
-		0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPDeviceCard.swift; sourceTree = "<group>"; };
-		0E4EC93529B02EC9000D7DC7 /* SPO2DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceViewModel.swift; sourceTree = "<group>"; };
-		0E4EC93729B02EE6000D7DC7 /* SPO2DeviceViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceViewManager.swift; sourceTree = "<group>"; };
-		0E4EC93B29B066EE000D7DC7 /* SPO2NotConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2NotConnectedView.swift; sourceTree = "<group>"; };
-		0E4EC93D29B06702000D7DC7 /* SPO2SearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2SearchingView.swift; sourceTree = "<group>"; };
-		0E4EC93F29B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2DeviceDiscoveredView.swift; sourceTree = "<group>"; };
-		0E4EC94129B06729000D7DC7 /* SPO2ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2ConnectingView.swift; sourceTree = "<group>"; };
-		0E4EC94329B06739000D7DC7 /* SPO2ConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPO2ConnectedView.swift; sourceTree = "<group>"; };
-		0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSPO2ConnectionHandler.swift; sourceTree = "<group>"; };
-		0E7663B029B1346C004CE0AB /* DemoSPO2Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSPO2Device.swift; sourceTree = "<group>"; };
+		0E4EC93029B026D2000D7DC7 /* DeviceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCardView.swift; sourceTree = "<group>"; };
+		0E4EC93529B02EC9000D7DC7 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		0E4EC93729B02EE6000D7DC7 /* DeviceViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewManager.swift; sourceTree = "<group>"; };
+		0E4EC93B29B066EE000D7DC7 /* NotConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotConnectedView.swift; sourceTree = "<group>"; };
+		0E4EC93D29B06702000D7DC7 /* SearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingView.swift; sourceTree = "<group>"; };
+		0E4EC93F29B06719000D7DC7 /* DeviceDiscoveredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiscoveredView.swift; sourceTree = "<group>"; };
+		0E4EC94129B06729000D7DC7 /* ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingView.swift; sourceTree = "<group>"; };
+		0E4EC94329B06739000D7DC7 /* ConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedView.swift; sourceTree = "<group>"; };
+		0E4EC94529B06941000D7DC7 /* ConnectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionHandler.swift; sourceTree = "<group>"; };
+		0E7663B029B1346C004CE0AB /* BleDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleDevice.swift; sourceTree = "<group>"; };
+		0E9119CA29B7FB690018182D /* CommunicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationService.swift; sourceTree = "<group>"; };
+		0E9119CC29B7FB900018182D /* CommunicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationDelegate.swift; sourceTree = "<group>"; };
+		0E9119CF29B7FBED0018182D /* BatteryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfo.swift; sourceTree = "<group>"; };
+		0E9119D329B8065C0018182D /* DisplayMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,6 @@
 				0E4EC92529B02236000D7DC7 /* Root */,
 				0E4EC92B29B0234E000D7DC7 /* Home */,
 				0E4EC92C29B02359000D7DC7 /* SpO2 */,
-				0E4EC92D29B023C8000D7DC7 /* BP */,
 				0E4EC8FF29AEEFD7000D7DC7 /* Assets.xcassets */,
 				0E4EC90129AEEFD7000D7DC7 /* Preview Content */,
 			);
@@ -144,31 +149,27 @@
 			isa = PBXGroup;
 			children = (
 				0E4EC94729B06949000D7DC7 /* Views */,
-				0E4EC93529B02EC9000D7DC7 /* SPO2DeviceViewModel.swift */,
-				0E4EC94529B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift */,
-				0E7663B029B1346C004CE0AB /* DemoSPO2Device.swift */,
+				0E4EC93529B02EC9000D7DC7 /* DeviceViewModel.swift */,
+				0E4EC94529B06941000D7DC7 /* ConnectionHandler.swift */,
+				0E9119CA29B7FB690018182D /* CommunicationService.swift */,
+				0E9119CC29B7FB900018182D /* CommunicationDelegate.swift */,
+				0E7663B029B1346C004CE0AB /* BleDevice.swift */,
+				0E9119CF29B7FBED0018182D /* BatteryInfo.swift */,
 			);
 			path = SpO2;
-			sourceTree = "<group>";
-		};
-		0E4EC92D29B023C8000D7DC7 /* BP */ = {
-			isa = PBXGroup;
-			children = (
-				0E4EC93329B02C96000D7DC7 /* BPDeviceCard.swift */,
-			);
-			path = BP;
 			sourceTree = "<group>";
 		};
 		0E4EC94729B06949000D7DC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0E4EC93729B02EE6000D7DC7 /* SPO2DeviceViewManager.swift */,
-				0E4EC93B29B066EE000D7DC7 /* SPO2NotConnectedView.swift */,
-				0E4EC93D29B06702000D7DC7 /* SPO2SearchingView.swift */,
-				0E4EC93F29B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift */,
-				0E4EC94129B06729000D7DC7 /* SPO2ConnectingView.swift */,
-				0E4EC94329B06739000D7DC7 /* SPO2ConnectedView.swift */,
-				0E4EC93029B026D2000D7DC7 /* SPO2DeviceCardView.swift */,
+				0E4EC93729B02EE6000D7DC7 /* DeviceViewManager.swift */,
+				0E4EC93B29B066EE000D7DC7 /* NotConnectedView.swift */,
+				0E4EC93D29B06702000D7DC7 /* SearchingView.swift */,
+				0E4EC93F29B06719000D7DC7 /* DeviceDiscoveredView.swift */,
+				0E4EC94129B06729000D7DC7 /* ConnectingView.swift */,
+				0E4EC94329B06739000D7DC7 /* ConnectedView.swift */,
+				0E4EC93029B026D2000D7DC7 /* DeviceCardView.swift */,
+				0E9119D329B8065C0018182D /* DisplayMessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,21 +274,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E4EC93829B02EE6000D7DC7 /* SPO2DeviceViewManager.swift in Sources */,
+				0E4EC93829B02EE6000D7DC7 /* DeviceViewManager.swift in Sources */,
 				0E4EC8FE29AEEFD5000D7DC7 /* ContentView.swift in Sources */,
 				0E4EC8FC29AEEFD5000D7DC7 /* BLEDemoApp.swift in Sources */,
 				0E4EC92929B0225F000D7DC7 /* RootViewModel.swift in Sources */,
-				0E4EC94629B06941000D7DC7 /* DemoSPO2ConnectionHandler.swift in Sources */,
-				0E4EC94029B06719000D7DC7 /* SPO2DeviceDiscoveredView.swift in Sources */,
-				0E7663B129B1346C004CE0AB /* DemoSPO2Device.swift in Sources */,
-				0E4EC93C29B066EE000D7DC7 /* SPO2NotConnectedView.swift in Sources */,
-				0E4EC93129B026D2000D7DC7 /* SPO2DeviceCardView.swift in Sources */,
-				0E4EC93629B02EC9000D7DC7 /* SPO2DeviceViewModel.swift in Sources */,
+				0E4EC94629B06941000D7DC7 /* ConnectionHandler.swift in Sources */,
+				0E4EC94029B06719000D7DC7 /* DeviceDiscoveredView.swift in Sources */,
+				0E9119D029B7FBED0018182D /* BatteryInfo.swift in Sources */,
+				0E9119D429B8065C0018182D /* DisplayMessageView.swift in Sources */,
+				0E7663B129B1346C004CE0AB /* BleDevice.swift in Sources */,
+				0E4EC93C29B066EE000D7DC7 /* NotConnectedView.swift in Sources */,
+				0E4EC93129B026D2000D7DC7 /* DeviceCardView.swift in Sources */,
+				0E4EC93629B02EC9000D7DC7 /* DeviceViewModel.swift in Sources */,
 				0E4EC92F29B023E3000D7DC7 /* HomeView.swift in Sources */,
-				0E4EC93429B02C96000D7DC7 /* BPDeviceCard.swift in Sources */,
-				0E4EC94229B06729000D7DC7 /* SPO2ConnectingView.swift in Sources */,
-				0E4EC93E29B06702000D7DC7 /* SPO2SearchingView.swift in Sources */,
-				0E4EC94429B06739000D7DC7 /* SPO2ConnectedView.swift in Sources */,
+				0E4EC94229B06729000D7DC7 /* ConnectingView.swift in Sources */,
+				0E4EC93E29B06702000D7DC7 /* SearchingView.swift in Sources */,
+				0E9119CB29B7FB690018182D /* CommunicationService.swift in Sources */,
+				0E4EC94429B06739000D7DC7 /* ConnectedView.swift in Sources */,
+				0E9119CD29B7FB900018182D /* CommunicationDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

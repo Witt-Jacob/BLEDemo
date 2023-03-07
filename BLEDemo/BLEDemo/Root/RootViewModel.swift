@@ -13,6 +13,5 @@ class RootViewModel : ObservableObject {
 
 enum ScreenState {
     case home
-    case pulseOximeter
-    case bloodPressureMonitor
+    case device
 }

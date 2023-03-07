@@ -1,5 +1,5 @@
 //
-//  SPO2ConnectingView.swift
+//  SPO2SearchingView.swift
 //  BLEDemo
 //
 //  Created by JAKE WITT on 3/1/23.
@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct SPO2ConnectingView: View {
+struct SearchingView: View {
+    let cancelScan : () -> Void
     var body: some View {
         VStack {
-            Text("Connecting...")
+            Text("Scanning...")
                 .font(.title)
                 .foregroundColor(Color.blue)
                 .padding()
@@ -28,8 +29,8 @@ struct SPO2ConnectingView: View {
     }
 }
 
-struct SPO2ConnectingView_Previews: PreviewProvider {
+struct SPO2SearchingView_Previews: PreviewProvider {
     static var previews: some View {
-        SPO2ConnectingView()
+        SearchingView(cancelScan: {})
     }
 }

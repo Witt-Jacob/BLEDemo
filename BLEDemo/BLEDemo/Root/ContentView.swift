@@ -9,12 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel : RootViewModel
-    let spo2ViewModel : SPO2DeviceViewModel
+    let deviceViewModel : DeviceViewModel
     var body: some View {
         switch viewModel.state {
-        case .home: HomeView(spo2ViewModel: spo2ViewModel, rootViewModel: viewModel)
-        case .pulseOximeter: SPO2DeviceViewManager(viewModel: spo2ViewModel)
-        case .bloodPressureMonitor: EmptyView()
+        case .home: HomeView(deviceViewModel: deviceViewModel , rootViewModel: viewModel)
+        case .device: DeviceViewManager(viewModel: deviceViewModel)
         }
     }
 }

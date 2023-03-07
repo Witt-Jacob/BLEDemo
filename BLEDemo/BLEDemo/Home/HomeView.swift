@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var spo2ViewModel: SPO2DeviceViewModel
+    @ObservedObject var deviceViewModel: DeviceViewModel
     let rootViewModel : RootViewModel
     
     var body: some View {
@@ -19,10 +19,11 @@ struct HomeView: View {
                 .padding()
             Divider().foregroundColor(.black).padding()
             ScrollView {
-                SPO2DeviceCardView(isConnected: spo2ViewModel.state == .connected).padding().onTapGesture {
-                    rootViewModel.state = .pulseOximeter
+                DeviceCardView(isConnected: deviceViewModel.state == .connected)
+                    .padding()
+                    .onTapGesture {
+                    rootViewModel.state = .device
                 }
-                BPDeviceCard(isConnected: .constant(true))
             }
         }
     }

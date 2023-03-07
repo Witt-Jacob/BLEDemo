@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SPO2DeviceDiscoveredView: View {
-    @ObservedObject var viewModel : SPO2DeviceViewModel
+struct DeviceDiscoveredView: View {
+    @ObservedObject var viewModel : DeviceViewModel
     var body: some View {
         VStack {
             Text("Discovered Devices")
@@ -19,7 +19,7 @@ struct SPO2DeviceDiscoveredView: View {
             ScrollView {
                 ForEach(viewModel.demoDevices) {
                     device in
-                    Text("Device \(device.serialNumber)").padding().onTapGesture {
+                    Text("Device \(device.id)").padding().onTapGesture {
                         viewModel.connectToDevice(device: device)
                     }
                 }
@@ -30,6 +30,6 @@ struct SPO2DeviceDiscoveredView: View {
 
 struct SPO2DeviceDiscoveredView_Previews: PreviewProvider {
     static var previews: some View {
-        SPO2DeviceDiscoveredView(viewModel: SPO2DeviceViewModel())
+        DeviceDiscoveredView(viewModel: DeviceViewModel())
     }
 }

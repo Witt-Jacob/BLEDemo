@@ -1,5 +1,5 @@
 //
-//  BPDeviceCard.swift
+//  SPO2DeviceCard.swift
 //  BLEDemo
 //
 //  Created by JAKE WITT on 3/1/23.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct BPDeviceCard: View {
-    @Binding var isConnected: Bool
+struct DeviceCardView: View {
+    var isConnected: Bool
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Blood Pressure Monitor:").font(.title3).padding(.bottom, 2)
+            Text("Device Status:").font(.title3).padding(.bottom, 2)
             Text(text)
         }.padding().background(backgroundColor.opacity(0.8)).cornerRadius(8)
     }
@@ -32,14 +32,14 @@ struct BPDeviceCard: View {
             return "Not Connected"
         }
     }
-    
 }
+            
 
-struct BPDeviceCard_Previews: PreviewProvider {
+struct SPO2DeviceCard_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            BPDeviceCard(isConnected: .constant(true))
-            BPDeviceCard(isConnected: .constant(false))
+            DeviceCardView(isConnected: true)
+            DeviceCardView(isConnected: false)
         }
     }
 }
