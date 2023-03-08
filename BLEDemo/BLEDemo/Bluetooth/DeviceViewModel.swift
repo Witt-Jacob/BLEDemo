@@ -15,6 +15,7 @@ class DeviceViewModel : ObservableObject {
     @Published var failedToConnect : Bool = false
     @Published var batteryInfo : BatteryInfo?
     
+    var searchTimer: Timer? = nil
     var connectedDevice : BleDevice?
     let connectionHandler = ConnectionHandler()
     let communicationService = CommunicationService()
@@ -45,6 +46,11 @@ class DeviceViewModel : ObservableObject {
                 }
             }
         })
+        
+        searchTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { _ in
+            self.connectionHandler.stopDeviceScan()
+            self.state = .deviceDiscovered
+        }
     }
     
     func stopScanning() {
@@ -56,6 +62,8 @@ class DeviceViewModel : ObservableObject {
     
     func connectToDevice(device : BleDevice) {
         connectionHandler.stopDeviceScan()
+        self.searchTimer?.invalidate()
+        
         guaranteeMainThread {
             self.state = .connecting
         }

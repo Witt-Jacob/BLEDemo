@@ -16,13 +16,27 @@ struct DeviceDiscoveredView: View {
                 .foregroundColor(Color.blue)
                 .padding()
             Divider().foregroundColor(.black).padding()
-            ScrollView {
-                ForEach(viewModel.demoDevices) {
-                    device in
-                    Text("Device \(device.peripheral.name ?? "unknown device")").padding().onTapGesture {
-                        viewModel.connectToDevice(device: device)
+            if !viewModel.demoDevices.isEmpty {
+                ScrollView {
+                    ForEach(viewModel.demoDevices) {
+                        device in
+                        Text("Device \(device.peripheral.name ?? "unknown device")").padding().onTapGesture {
+                            viewModel.connectToDevice(device: device)
+                        }
                     }
                 }
+            } else {
+                Text("No devices found").padding()
+                Button(action: {
+                    viewModel.scanForDevices()
+                }) {
+                    Text("SCAN")
+                        .fontWeight(.bold)
+                        .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.blue, lineWidth: 1))
+                }
+                Spacer()
+                
             }
         }
     }
