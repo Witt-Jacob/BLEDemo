@@ -107,7 +107,7 @@
 			children = (
 				0E4EC92529B02236000D7DC7 /* Root */,
 				0E4EC92B29B0234E000D7DC7 /* Home */,
-				0E4EC92C29B02359000D7DC7 /* Bluetooth */,
+				0E4EC92C29B02359000D7DC7 /* Device */,
 				0E4EC8FF29AEEFD7000D7DC7 /* Assets.xcassets */,
 				0E4EC90129AEEFD7000D7DC7 /* Preview Content */,
 			);
@@ -147,7 +147,7 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		0E4EC92C29B02359000D7DC7 /* Bluetooth */ = {
+		0E4EC92C29B02359000D7DC7 /* Device */ = {
 			isa = PBXGroup;
 			children = (
 				0E4EC94729B06949000D7DC7 /* Views */,
@@ -158,7 +158,7 @@
 				0E7663B029B1346C004CE0AB /* BleDevice.swift */,
 				0E9119CF29B7FBED0018182D /* BatteryInfo.swift */,
 			);
-			path = Bluetooth;
+			path = Device;
 			sourceTree = "<group>";
 		};
 		0E4EC94729B06949000D7DC7 /* Views */ = {
