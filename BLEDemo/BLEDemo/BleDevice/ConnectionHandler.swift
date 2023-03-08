@@ -58,7 +58,7 @@ extension ConnectionHandler : CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        guard let callback = foundDeviceCallback else {
+        guard let callback = foundDeviceCallback, (peripheral.name != nil) else {
             return
         }
         callback(BleDevice(id: peripheral.identifier.uuidString, peripheral: peripheral))

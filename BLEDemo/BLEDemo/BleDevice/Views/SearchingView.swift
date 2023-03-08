@@ -16,9 +16,7 @@ struct SearchingView: View {
                 .foregroundColor(Color.blue)
                 .padding()
             Divider().foregroundColor(.black).padding()
-            Button(action: {
-                
-            }) {
+            Button(action: cancelScan) {
                 Text("CANCEL")
                     .fontWeight(.bold)
                     .padding()
