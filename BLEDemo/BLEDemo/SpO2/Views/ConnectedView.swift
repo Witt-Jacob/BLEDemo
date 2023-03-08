@@ -15,6 +15,7 @@ struct ConnectedView: View {
                 .font(.title)
                 .foregroundColor(Color.green)
                 .padding()
+            Text("Battery level: \(viewModel.batteryInfo?.percentage ?? 0)").foregroundColor(viewModel.batteryInfo?.percentage ?? 0 > 70 ? Color.green : Color.red)
             Divider().foregroundColor(.black).padding()
             Button(action: {
                 viewModel.disconnectConnectedDevice()
@@ -24,8 +25,9 @@ struct ConnectedView: View {
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.blue, lineWidth: 1))
             }
+            
+            Spacer()
         }
-        Spacer()
     }
 }
 

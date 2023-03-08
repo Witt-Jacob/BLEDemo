@@ -25,8 +25,9 @@ struct NotConnectedView: View {
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.blue, lineWidth: 1))
             }
+            
+            Spacer()
         }
-        Spacer()
     }
 }
 

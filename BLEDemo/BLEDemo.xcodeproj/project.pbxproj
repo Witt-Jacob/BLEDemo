@@ -27,6 +27,7 @@
 		0E9119CD29B7FB900018182D /* CommunicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9119CC29B7FB900018182D /* CommunicationDelegate.swift */; };
 		0E9119D029B7FBED0018182D /* BatteryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9119CF29B7FBED0018182D /* BatteryInfo.swift */; };
 		0E9119D429B8065C0018182D /* DisplayMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9119D329B8065C0018182D /* DisplayMessageView.swift */; };
+		0E9119D629B810EA0018182D /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9119D529B810EA0018182D /* BackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		0E9119CC29B7FB900018182D /* CommunicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationDelegate.swift; sourceTree = "<group>"; };
 		0E9119CF29B7FBED0018182D /* BatteryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfo.swift; sourceTree = "<group>"; };
 		0E9119D329B8065C0018182D /* DisplayMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMessageView.swift; sourceTree = "<group>"; };
+		0E9119D529B810EA0018182D /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				0E4EC94329B06739000D7DC7 /* ConnectedView.swift */,
 				0E4EC93029B026D2000D7DC7 /* DeviceCardView.swift */,
 				0E9119D329B8065C0018182D /* DisplayMessageView.swift */,
+				0E9119D529B810EA0018182D /* BackButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E9119D629B810EA0018182D /* BackButton.swift in Sources */,
 				0E4EC93829B02EE6000D7DC7 /* DeviceViewManager.swift in Sources */,
 				0E4EC8FE29AEEFD5000D7DC7 /* ContentView.swift in Sources */,
 				0E4EC8FC29AEEFD5000D7DC7 /* BLEDemoApp.swift in Sources */,
@@ -438,6 +442,7 @@
 				DEVELOPMENT_TEAM = 7K3TFSLY92;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth to connect to devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,6 +472,7 @@
 				DEVELOPMENT_TEAM = 7K3TFSLY92;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth to connect to devices";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

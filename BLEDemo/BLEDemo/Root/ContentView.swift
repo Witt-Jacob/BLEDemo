@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         switch viewModel.state {
         case .home: HomeView(deviceViewModel: deviceViewModel , rootViewModel: viewModel)
-        case .device: DeviceViewManager(viewModel: deviceViewModel)
+        case .device: DeviceViewManager(viewModel: deviceViewModel, backToHome: {viewModel.state = .home})
         }
     }
 }

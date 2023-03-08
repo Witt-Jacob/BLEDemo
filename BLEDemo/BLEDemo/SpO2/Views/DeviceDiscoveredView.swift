@@ -19,7 +19,7 @@ struct DeviceDiscoveredView: View {
             ScrollView {
                 ForEach(viewModel.demoDevices) {
                     device in
-                    Text("Device \(device.id)").padding().onTapGesture {
+                    Text("Device \(device.peripheral.name ?? "unknown device")").padding().onTapGesture {
                         viewModel.connectToDevice(device: device)
                     }
                 }

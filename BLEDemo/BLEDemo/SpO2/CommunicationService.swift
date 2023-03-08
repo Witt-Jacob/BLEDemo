@@ -15,7 +15,13 @@ class CommunicationService : NSObject {
         self.delegate = delegate
     }
     func getBatteryInfo(peripheral : CBPeripheral) {
-        delegate?.batteryInfoReceived(battery: BatteryInfo(percentage: 97))
+        delegate?.batteryInfoReceived(battery: BatteryInfo(percentage: Int.random(in: 0...100)))
+    }
+    
+    func startDataCollection(_ peripheral : CBPeripheral) {
+        //A flow that polls data periodically
+        getBatteryInfo(peripheral: peripheral)
+        
     }
 }
 extension CommunicationService : CBPeripheralDelegate {

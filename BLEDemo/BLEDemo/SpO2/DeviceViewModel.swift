@@ -12,6 +12,8 @@ class DeviceViewModel : ObservableObject {
     @Published var demoDevices : [BleDevice] = []
     @Published var noPermissions : Bool = false
     @Published var bluetoothOff : Bool = false
+    @Published var failedToConnect : Bool = false
+    @Published var batteryInfo : BatteryInfo?
     
     var connectedDevice : BleDevice?
     let connectionHandler = ConnectionHandler()
@@ -23,10 +25,12 @@ class DeviceViewModel : ObservableObject {
     
     func scanForDevices() {
         if !connectionHandler.isBluetoothPermissionGranted() {
+            noPermissions = true
             return
         }
         
         if !connectionHandler.isBluetoothOn() {
+            bluetoothOff = true
             return
         }
         guaranteeMainThread {
@@ -43,6 +47,13 @@ class DeviceViewModel : ObservableObject {
         })
     }
     
+    func stopScanning() {
+        connectionHandler.stopDeviceScan()
+        guaranteeMainThread {
+            self.state = .notConnected
+        }
+    }
+    
     func connectToDevice(device : BleDevice) {
         connectionHandler.stopDeviceScan()
         guaranteeMainThread {
@@ -57,6 +68,8 @@ class DeviceViewModel : ObservableObject {
                 self.connectedDevice = device
                 self.state = .connected
             }
+            
+            self.communicationService.startDataCollection(device.peripheral)
         }, onDisconnected: {
             device in
 
@@ -67,19 +80,27 @@ class DeviceViewModel : ObservableObject {
         }, onError: {
             device in
             
-            print("Error")
+            guaranteeMainThread {
+                self.state = .notConnected
+                self.failedToConnect = true
+            }
         })
 
     }
     
     func disconnectConnectedDevice() {
-        
+        guard let device = connectedDevice else {
+            return
+        }
+        connectionHandler.disconnectFromDevice(device)
     }
 }
 
 extension DeviceViewModel : CommunicationDelegate {
     func batteryInfoReceived(battery: BatteryInfo) {
-        print("Battery Level : \(battery.percentage)")
+        guaranteeMainThread {
+            self.batteryInfo = battery
+        }
     }
 }
 
